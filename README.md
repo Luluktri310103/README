@@ -143,7 +143,7 @@ switch ($method) {
             response(400, ["message" => "clinics ID is required"]);
         }
         $id = $request[0];
-        $sql = "DELETE FROM books WHERE id = ?";
+        $sql = "DELETE FROM clinics WHERE id = ?";
         $stmt = $db->prepare($sql);
         if ($stmt->execute([$id])) {
             response(200, ["message" => "clinics deleted"]);
@@ -203,7 +203,7 @@ switch ($method) {
   - Masukkan:
     ```json
     {
-    "name": "Klinik Pratama Medika",
+    "name": "Klinik Pratama Medika Sejahtera",
     "address": "JL. Merdeka no 13, Semarang",
     "phone" : "231",
     "schedule": "Senin-Jumat 08:00-17:00"
@@ -215,12 +215,6 @@ switch ($method) {
 - Method: DELETE
 - URL: `http://localhost/rest_clinics/clinics_api.php/6` (untuk menghapus buku dengan ID 6)
 - Klik "Send"
-
-### 5. Latihan Tambahan
-1. Tambahkan fitur pencarian buku berdasarkan judul atau penulis.
-2. Implementasikan paginasi untuk mendapatkan buku.
-3. Tambahkan validasi input yang lebih ketat (misalnya, tahun harus 4 digit).
-4. Buat dokumentasi API sederhana menggunakan Markdown atau HTML.
 
 ### Kesimpulan
 Dalam praktikum ini, Anda telah berhasil membuat web service REST untuk manajemen buku menggunakan PHP dan MySQL. Anda juga telah belajar cara menguji API menggunakan Postman. Praktik ini memberikan dasar yang kuat untuk pengembangan API RESTful lebih lanjut.
