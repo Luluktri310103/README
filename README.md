@@ -1,7 +1,9 @@
-# Modul Praktikum: Web Service REST untuk Manajemen Clinics
+# Web Service REST untuk Manajemen Clinics
+## Nama : Luluk Tri Utami
+## Nim : 21.01.55.0006
 
 ## Tujuan
-Membuat dan menguji web service REST untuk manajemen buku menggunakan PHP dan MySQL.
+Membuat dan menguji web service REST untuk manajemen clinics menggunakan PHP dan MySQL.
 
 ## Alat yang Dibutuhkan
 1. XAMPP (atau server web lain dengan PHP dan MySQL)
