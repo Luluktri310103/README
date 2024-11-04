@@ -170,12 +170,12 @@ switch ($method) {
 - URL: `http://localhost/rest_clinics/clinics_api.php`
 - Klik "Send"
 
-#### b. GET Specific Book
+#### b. GET Specific 
 - Method: GET
 - URL: `http://localhost/rest_clinics/clinics_api.php/1` (untuk buku dengan ID 1)
 - Klik "Send"
 
-#### c. POST New Book
+#### c. POST New Clinics
 - Method: POST
 - URL: `http://localhost/rest_clinics/clinics_api.php`
 - Headers: 
@@ -194,7 +194,7 @@ switch ($method) {
     ```
 - Klik "Send"
 
-#### d. PUT (Update) Book
+#### d. PUT (Update) Clinics
 - Method: PUT
 - URL: `http://localhost/rest_clinics/clinics_api.php/6` (asumsikan ID buku baru adalah 6)
 - Headers: 
