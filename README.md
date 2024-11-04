@@ -165,7 +165,7 @@ switch ($method) {
 1. Buka Postman
 2. Buat request baru untuk setiap operasi berikut:
 
-#### a. GET All Books
+#### a. GET All Clinics
 - Method: GET
 - URL: `http://localhost/rest_clinics/clinics_api.php`
 - Klik "Send"
@@ -213,7 +213,7 @@ switch ($method) {
     ```
 - Klik "Send"
 
-#### e. DELETE Book
+#### e. DELETE Clinics
 - Method: DELETE
 - URL: `http://localhost/rest_clinics/clinics_api.php/6` (untuk menghapus buku dengan ID 6)
 - Klik "Send"
