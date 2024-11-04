@@ -1,0 +1,507 @@
+{
+	"info": {
+		"_postman_id": "c67888d9-9a1b-406c-bbea-386f2b0d5767",
+		"name": "Latihan_uts_dbs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39156183"
+	},
+	"item": [
+		{
+			"name": "http://localhost/rest_clinics/clinics_api.php",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost/rest_clinics/clinics_api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_clinics",
+						"clinics_api.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/rest_clinics/clinics_api.php",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/rest_clinics/clinics_api.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest_clinics",
+								"clinics_api.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 02:39:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.51 (Win64) OpenSSL/1.1.1l PHP/8.0.13"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.13"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "954"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Klinik Sehat Sentosa\",\n        \"address\": \"Jl. Merdeka No. 12, Jakarta\",\n        \"phone\": 21,\n        \"schedule\": \"Senin-Jumat 08:00-17:00\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Klinik Harapan Bunda\",\n        \"address\": \"Jl. Sudirman No. 45, Bandung\",\n        \"phone\": 22,\n        \"schedule\": \"Senin-Sabtu 09:00-18:00\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Klinik Pratama Medika\",\n        \"address\": \"Jl. Veteran No. 21, Surabaya\",\n        \"phone\": 31,\n        \"schedule\": \"Senin-Minggu 07:00-15:00\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Klinik Kasih Ibu\",\n        \"address\": \"Jl. Ahmad Yani No. 78, Yogyakarta\",\n        \"phone\": 274,\n        \"schedule\": \"Senin-Jumat 08:00-16:00\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Klinik Sejahtera\",\n        \"address\": \"Jl. Pahlawan No. 10, Semarang\",\n        \"phone\": 24,\n        \"schedule\": \"Senin-Jumat 08:00-17:00, Sabtu 08:00-12:00\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Klinik Pratama Medika Sejahtera\",\n        \"address\": \"JL. Merdeka no 13, Semarang Selatan\",\n        \"phone\": 231,\n        \"schedule\": \"Senin-Jumat 08:00-17:00\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Klinik Pratama Medika Sejahtera\",\n        \"address\": \"JL. Merdeka no 13, Semarang Selatan\",\n        \"phone\": 231,\n        \"schedule\": \"Senin-Jumat 08:00-17:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/rest_clinics/clinics_api.php/7",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Klinik Pratama Medika Sejahtera\",\r\n    \"address\": \"JL. Merdeka no 13, Semarang Selatan\",\r\n    \"phone\": 231,\r\n    \"schedule\": \"Senin-Jumat 08:00-17:00\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/rest_clinics/clinics_api.php/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_clinics",
+						"clinics_api.php",
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/rest_clinics/clinics_api.php/7",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Klinik Pratama Medika Sejahtera\",\r\n    \"address\": \"JL. Merdeka no 13, Semarang Selatan\",\r\n    \"phone\": 231,\r\n    \"schedule\": \"Senin-Jumat 08:00-17:00\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/rest_clinics/clinics_api.php/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest_clinics",
+								"clinics_api.php",
+								"9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 02:39:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.51 (Win64) OpenSSL/1.1.1l PHP/8.0.13"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.13"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"clinics updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/rest_clinics/clinics_api.php/7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/rest_clinics/clinics_api.php/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_clinics",
+						"clinics_api.php",
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/rest_clinics/clinics_api.php/7",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rest_clinics/clinics_api.php/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest_clinics",
+								"clinics_api.php",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 02:30:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.51 (Win64) OpenSSL/1.1.1l PHP/8.0.13"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.13"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "146"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"name\": \"Klinik Pratama Medika Sejahtera\",\n    \"address\": \"JL. Merdeka no 13, Semarang Selatan\",\n    \"phone\": 231,\n    \"schedule\": \"Senin-Jumat 08:00-17:00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/rest_clinics/clinics_api.php",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/rest_clinics/clinics_api.php/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_clinics",
+						"clinics_api.php",
+						"8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/rest_clinics/clinics_api.php",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/rest_clinics/clinics_api.php/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest_clinics",
+								"clinics_api.php",
+								"8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 02:34:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.51 (Win64) OpenSSL/1.1.1l PHP/8.0.13"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.13"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"clinics deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/rest_clinics/clinics_api.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Klinik Qisya Medika\", \"address\": \"JL. Soekarno - Hatta no 13, Semarang\", \"phone\" : \"345\", \"schedule\": \"Senin-Jumat 09:00-20:00\" }"
+				},
+				"url": {
+					"raw": "http://localhost/rest_clinics/clinics_api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_clinics",
+						"clinics_api.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/rest_clinics/clinics_api.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"name\": \"Klinik Qisya Medika\", \"address\": \"JL. Soekarno - Hatta no 13, Semarang\", \"phone\" : \"345\", \"schedule\": \"Senin-Jumat 09:00-20:00\" }"
+						},
+						"url": {
+							"raw": "http://localhost/rest_clinics/clinics_api.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest_clinics",
+								"clinics_api.php"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 02:37:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.51 (Win64) OpenSSL/1.1.1l PHP/8.0.13"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.13"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"clinics created\",\n    \"id\": \"9\"\n}"
+				}
+			]
+		}
+	]
+}
